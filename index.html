@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ماشین حساب پیشرفته</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display-section">
+                <div class="history" id="history"></div>
+                <div class="display" id="display">0</div>
+            </div>
+            
+            <div class="memory-bar">
+                <button class="memory-btn" id="mc">MC</button>
+                <button class="memory-btn" id="mr">MR</button>
+                <button class="memory-btn" id="m-plus">M+</button>
+                <button class="memory-btn" id="m-minus">M-</button>
+                <span class="memory-indicator" id="memory-indicator"></span>
+            </div>
+
+            <div class="buttons">
+                <!-- Row 1: Advanced functions -->
+                <button class="btn function" data-action="sqrt">√</button>
+                <button class="btn function" data-action="square">x²</button>
+                <button class="btn function" data-action="power">xʸ</button>
+                <button class="btn function" data-action="inverse">1/x</button>
+                
+                <!-- Row 2 -->
+                <button class="btn operator" data-action="clear">C</button>
+                <button class="btn operator" data-action="delete">⌫</button>
+                <button class="btn operator" data-action="percent">%</button>
+                <button class="btn operator" data-action="divide">÷</button>
+                
+                <!-- Row 3 -->
+                <button class="btn number" data-value="7">7</button>
+                <button class="btn number" data-value="8">8</button>
+                <button class="btn number" data-value="9">9</button>
+                <button class="btn operator" data-action="multiply">×</button>
+                
+                <!-- Row 4 -->
+                <button class="btn number" data-value="4">4</button>
+                <button class="btn number" data-value="5">5</button>
+                <button class="btn number" data-value="6">6</button>
+                <button class="btn operator" data-action="subtract">−</button>
+                
+                <!-- Row 5 -->
+                <button class="btn number" data-value="1">1</button>
+                <button class="btn number" data-value="2">2</button>
+                <button class="btn number" data-value="3">3</button>
+                <button class="btn operator" data-action="add">+</button>
+                
+                <!-- Row 6 -->
+                <button class="btn number" data-value="0">0</button>
+                <button class="btn number" data-value=".">.</button>
+                <button class="btn operator" data-action="negate">+/−</button>
+                <button class="btn equals" data-action="equals">=</button>
+            </div>
+        </div>
+
+        <div class="history-panel" id="history-panel">
+            <div class="history-header">
+                <h3>تاریخچه</h3>
+                <button class="clear-history" id="clear-history">پاک کردن</button>
+            </div>
+            <div class="history-list" id="history-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
